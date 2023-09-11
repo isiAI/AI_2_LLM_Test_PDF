@@ -98,7 +98,7 @@ def handle_userinput(user_question):
 def main():
     load_dotenv()
 
-    st.set_page_config(page_title="HV-ChatGPT Prototyp",
+    st.set_page_config(page_title="isiAI-ChatGPT Prototyp",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
@@ -107,7 +107,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("HV-ChatGPT Prototyp")
+    st.header("isiAI-ChatGPT Prototyp")
     user_question = st.text_input("Ask a question about your documents:")
     if user_question:
         handle_userinput(user_question)
